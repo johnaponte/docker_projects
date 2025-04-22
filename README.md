@@ -1,6 +1,9 @@
 # RStudio Docker Environment
 
-This setup configures a Docker image with RStudio Server accessible via an `ngrok` tunnel.
+To create reproducible R development environments
+
+*create_docker_projects.sh*
+This script setup configures a Docker image with RStudio Server accessible via an `ngrok` tunnel.
 
 ## Project Structure
 
