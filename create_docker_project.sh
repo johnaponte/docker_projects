@@ -155,9 +155,10 @@ EOF
 
 
 cat << 'EOF' > "docker/README.md"
-# RStudio Docker Environment
+# Environment for R development
 
-This setup configures a Docker image with RStudio Server accessible via an `ngrok` tunnel.
+This script  configures a Docker image with RStudio Server accessible via an 
+`ngrok` tunnel.
 
 ## Project Structure
 
@@ -171,7 +172,7 @@ This setup configures a Docker image with RStudio Server accessible via an `ngro
 ### 1. Update docker/secrets/secrets.env
 
 Change to the docker directory and update secrets/secrets.env with a
-text editor. Be carefull not to include espaces around the "="
+text editor. Be careful not to include spaces around the "="
 Us a plain text editor as nano, vs_code or similar. Never use a word 
 processor like Microsoft(R) word.
 
@@ -217,18 +218,21 @@ In the docker directory you can manage the container with the following command
 The home of the default user is map to the `projects` directory
 in the host. You can use the container as a normal rstudio container
 
-By default, the container uses the `RStudio` available at the last date of the `R_VERSION`
-and sets the package manager to `Posit Package Manager` to the date of the `R_VERSION`
-The container has installed `pkgr` and together with the `env`  you
-can achive an extra layer of confidence for the reproduciblity of the analysis
-The recomendation is for each new project setup a pkgr.yml file and use `env``
-as library.
+By default, the container uses the `RStudio` available at the last date of the
+`R_VERSION` and sets the package manager to `Posit Package Manager` to the date
+of the `R_VERSION` The container has installed `pkgr` and together with the 
+`env`  you can achive an extra layer of confidence for the reproduciblity of the
+analysis The recomendation is for each new project setup a pkgr.yml file and use
+`env`  as library.
 
 For the `R_VERSION`and `RStudio` follow 
-[rocker-versioned2 versions and dates](https://github.com/rocker-org/rocker-versioned2/wiki/Versions)
+[rocker-versioned2 versions and 
+dates](https://github.com/rocker-org/rocker-versioned2/wiki/Versions)
 
-Follow [pkgr documentation](https://metrumresearchgroup.github.io/pkgr/docs/) for more information
+Follow [pkgr documentation](https://metrumresearchgroup.github.io/pkgr/docs/) 
+for more information
 on how to setup pkgr in your projects
+
 EOF
 
 
